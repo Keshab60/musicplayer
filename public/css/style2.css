@@ -1,0 +1,731 @@
+html {
+    background-color: #000000;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.invert {
+    filter: invert(1);
+}
+
+.spotify-logo {
+    padding-left: 20px;
+}
+
+.home-logo {
+    height: 25px;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    background-color: #000000;
+}
+
+#home-div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1f1f1f;
+    border-radius: 20px;
+    padding: 12px;
+}
+
+#home-container {
+    display: flex;
+    margin-left: 18%;
+    gap: 12px;
+    align-items: center;
+}
+
+#searching {
+    position: relative;
+}
+
+.search-img {
+    position: absolute;
+    width: 30px;
+    left: 15px;
+    top: 11px;
+}
+
+#search {
+    max-width: 466px;
+    width: 466px;
+    font-size: 20px;
+    border: none;
+    height: 48px;
+    padding-left: 60px;
+    border-radius: 50px;
+    background-color: #1f1f1f;
+    color: white;
+}
+
+@media (max-width:1031px) {
+    #search {
+        width: auto;
+    }
+}
+
+#sign-up-and-log-in-button {
+    display: flex;
+    justify-content: center;
+    gap: 17px;
+    padding-right: 20px;
+}
+
+.sign-up {
+    color: #b3b3b3;
+    border: none;
+    font-size: 17px;
+    height: 48px;
+    width: 97px;
+    background-color: #000000;
+    cursor: pointer;
+}
+
+.log-in {
+    border-radius: 40px;
+    font-size: 17px;
+    height: 48px;
+    width: 108px;
+    background-color: white;
+    color: black;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.whole-song-area {
+    display: flex;
+    gap: 12px;
+    padding: 10px 20px;
+    height: calc(100vh - 180px);
+}
+
+.song-area {
+    background-color: #121212;
+    color: white;
+    border-radius: 8px;
+    display: flex;
+    gap: 0px;
+    flex-direction: column;
+    align-items: center;
+    width: 410px;
+    overflow: auto;
+    scrollbar-width: thin;
+    scrollbar-color: #121212 #1f1f1f;
+    padding: 15px 0;
+}
+
+.Ed,
+.jubin,
+.sonunigam,
+.kk,
+.arijit,
+.atif,
+.justin {
+    display: flex;
+    justify-content: flex-start;
+    gap: 15px;
+    width: 100%;
+    padding: 15px 30px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+.Ed:hover,
+.jubin:hover,
+.sonunigam:hover,
+.kk:hover,
+.arijit:hover,
+.atif:hover,
+.justin:hover {
+    background-color: #2a2a2a;
+}
+
+.artist-namee,
+.artist {
+    margin: 0px;
+    color: white;
+    font-size: medium;
+}
+
+.imageee {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50px;
+}
+
+.artist-song-area {
+    border-radius: 10px;
+    width: 1200px;
+    background-color: #121212;
+    overflow: hidden;
+    position: relative;
+}
+
+.inside-div-of-artist-song-area {
+    background-color: #121212;
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 200;
+}
+
+.image-of-artist-song-area {
+    border-radius: 10px;
+    width: 100%;
+    height: 900px;
+    object-fit: cover;
+}
+
+.parent-div-of-scroll {
+    margin-top: 10px;
+    height: calc(100% - 60px);
+    width: 100%;
+    overflow: auto;
+    scrollbar-width: none;
+    position: absolute;
+}
+#menu-close {
+       display: none;
+    }
+.status-artist {
+    color: white;
+    padding-top: 110px;
+    padding-left: 25px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+#justin {
+    margin: 0px;
+    visibility: visible;
+    width: 100%;
+    font-size: 6rem;
+    white-space: nowrap;
+    font-weight: bold;
+    letter-spacing: -2px;
+}
+
+.justin2 {
+    color: white;
+    background-color: #121212;
+    padding-top: 56px;
+    padding-left: 25px;
+    position: relative;
+}
+
+#div-of-pause2 {
+    position: absolute;
+    top: 15px;
+    padding: 9px;
+    background-color: rgb(58, 224, 117);
+    border-radius: 29px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 27px;
+    height: 27px;
+    cursor: pointer;
+}
+
+.pause2 {
+    width: 20px;
+}
+
+#following {
+    position: absolute;
+    top: 20px;
+    left: 95px;
+    border: 0.2px #f6f0f0 solid;
+    padding: 5px 12px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: transparent;
+    color: white;
+    font-size: 0.9rem;
+}
+
+#following:hover {
+    border: 1px solid white;
+}
+
+#following h3 {
+    margin: 3px;
+}
+
+.keshab5 {
+    padding: 20px;
+    padding-left: 11px;
+    margin: 10px;
+}
+
+.keshab {
+    margin: 4px;
+    padding: 10px 10px 10px 5px;
+    border-radius: 4px;
+    width: 350px;
+    display: flex;
+}
+
+.play-pause-parent-div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.lower-play-pause-div {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#volume {
+    height: 3px;
+}
+
+.play-button {
+    padding: 12px;
+    border: none;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.play-pause {
+    width: 20px;
+}
+
+#play-container {
+    color: white;
+    padding: 30px;
+    height: 35px;
+    display: flex;
+    gap: 22px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #181818;
+    border-top: 1px solid #282828;
+}
+
+#text-in-play-pause-line {
+    font-weight: bold;
+}
+
+.prev,
+.next {
+    width: 20px;
+    cursor: pointer;
+}
+
+#seekbar {
+    -webkit-appearance: none;
+    width: 300px;
+    height: 3px;
+    background: #5e5e5e;
+    border-radius: 5px;
+    outline: none;
+}
+
+#seekbar::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 10px;
+    height: 10px;
+    background: #1db954;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.last-div-inside-play-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.last-div-inside-play-container p {
+    font-size: 20px;
+    margin: 0;
+}
+
+/* ===== Mobile Responsive Design ===== */
+@media (max-width: 834px) {
+
+    /* Global adjustments */
+    html {
+        font-size: 14px;
+    }
+
+    /* Navbar reorganization */
+    .navbar {
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+        gap: 15px;
+        font-size: 1.1rem;
+    }
+
+    #home-container {
+        margin-left: 0;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .spotify-logo {
+        height: 40px;
+        padding-left: 10px;
+    }
+
+    #searching {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    #search {
+        width: 100%;
+        max-width: 100%;
+        font-size: 16px;
+        padding-left: 50px;
+    }
+
+    .search-img {
+        left: 10px;
+        top: 14px;
+        width: 25px;
+    }
+
+    #sign-up-and-log-in-button {
+        width: 100%;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .sign-up,
+    .log-in {
+        height: 40px;
+        font-size: 15px;
+    }
+
+    .log-in {
+        width: 80px;
+    }
+
+    .sign-up {
+        width: 70px;
+    }
+
+    /* MAIN CONTENT REORGANIZATION - VERTICAL ARTIST AREA */
+    .whole-song-area {
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+        gap: 20px;
+        min-height: calc(100vh - 150px);
+    }
+
+    .song-area {
+        flex-direction: row;
+        width: 100%;
+        height: 250px;
+        border-radius: 12px;
+        overflow-y: auto;
+    }
+
+    .artist-song-area {
+        width: 100%;
+        border-radius: 12px;
+        height: 420px;
+    }
+
+    /* Vertical artist cards */
+    .Ed,
+    .jubin,
+    .sonunigam,
+    .kk,
+    .arijit,
+    .atif,
+    .justin {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 10px;
+        text-align: center;
+        border-bottom: 1px solid #2a2a2a;
+    }
+
+    .artist-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imageee {
+        width: 80px;
+        height: 80px;
+    }
+
+    .artist-namee,
+    .artist {
+        font-size: 1.1rem;
+    }
+
+    /* Main artist content */
+    .parent-div-of-scroll {
+        height: auto;
+        max-height: 50vh;
+        width: 100%;
+    }
+
+    .image-of-artist-song-area {
+        height: 300px;
+        border-radius: 12px 12px 0 0;
+    }
+
+    .status-artist {
+        padding-top: 20px;
+        padding-left: 15px;
+        font-size: 1.3rem;
+    }
+
+    /* Artist header adjustments */
+    .justin2 {
+        padding: 20px 15px;
+        text-align: center;
+    }
+
+    #justin {
+        font-size: 2.5rem;
+        /* text-align: center; */
+        padding-top: 10px;
+        white-space: normal;
+    }
+
+    #div-of-pause2 {
+        position: relative;
+        top: 0;
+        margin: 0 auto 10px;
+    }
+
+    #following {
+        position: relative;
+        top: 0;
+        left: 0;
+        margin: 10px auto;
+    }
+
+
+    /* Song list adjustments */
+    .keshab {
+        width: 100%;
+        max-width: none;
+        padding: 10px;
+    }
+
+    /* Player controls reorganization */
+    #play-container {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+        height: auto;
+        background: #121212;
+        border-radius: 0 0 12px 12px;
+    }
+
+    .play-pause-parent-div {
+        width: 100%;
+    }
+
+    #seekbar {
+        width: 100%;
+    }
+
+    .lower-play-pause-div {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .last-div-inside-play-container {
+        width: 100%;
+        justify-content: center;
+        padding: 0 10px;
+    }
+
+    #text-in-play-pause-line {
+        text-align: center;
+    }
+}
+
+/* Small mobile devices */
+@media (max-width: 480px) {
+    #home-div {
+        padding: 6px;
+    }
+
+    .home-logo {
+        height: 20px;
+    }
+
+    #search {
+        height: 40px;
+        padding-left: 40px;
+    }
+
+    .search-img {
+        width: 20px;
+        top: 10px;
+        left: 8px;
+    }
+
+    .sign-up,
+    .log-in {
+        width: 85px;
+        font-size: 14px;
+    }
+
+    #justin {
+        font-size: 2rem;
+    }
+
+    .image-of-artist-song-area {
+        height: 300px;
+    }
+
+    .imageee {
+        width: 70px;
+        height: 70px;
+    }
+
+    .status-artist {
+        padding-top: 20px;
+        font-size: 1.1rem;
+    }
+
+    .play-pause {
+        width: 18px;
+    }
+
+    .prev,
+    .next {
+        width: 18px;
+    }
+
+    .last-div-inside-play-container p {
+        font-size: 16px;
+    }
+
+    .keshab {
+        padding: 8px;
+    }
+}
+
+#menu-toggle {
+    display: none;
+}
+
+/* Mobile toggle menu styles */
+@media (max-width: 630px) {
+
+    /* Show the hamburger button */
+    #menu-toggle {
+        display: block;
+        font-size: 26px;
+        cursor: pointer;
+        padding: 8px;
+    }
+
+    /* Hide home + search initially */
+    #home-container {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        background-color: #121212;
+        padding: 15px;
+        border-radius: 0 0 8px 8px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+
+        /* Animation */
+        transform: translateY(-100%);
+        transition: transform 0.3s ease-in-out;
+    }
+
+    #home-container.active {
+        transform: translateY(0);
+    }
+
+    /* Close button */
+    #menu-close {
+        /* align-self: flex-end; */
+        display: block;
+        background: transparent;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+    }
+
+    /* Adjust search bar in toggle mode */
+    #search {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+.toggle_options {
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+#search-bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #121212;
+    padding: 10px;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+    /* Hide by moving up */
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-in-out;
+}
+
+#search-bar.active {
+    transform: translateY(0);
+}
+
+#search-bar input {
+    flex: 1;
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+#search-bar button {
+    background: none;
+    border: none; 
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
